@@ -35,10 +35,34 @@
      
      miso_it: it10.
      
-     miso_mc: mcf2, mcf3.
+     miso_mc: mcf2.
   
-#### main_gpyopt.py
+#### EI / LCB
+  ```bash
+  (VIRT_ENV) $ python main_gpyopt.py gw10Two1 EI 0 0
+  ```
+  1) Problem name: gw10Two1, gw20Three1, ky10One, it10, mcf2
+  
+  2) algorithm: EI, LCB
+  
+  3) Version: 0
+  
+  4) Replication_no: 0,1,2,... 
 
-#### main_hb.py
+#### HyperBand
+  ```bash
+  (VIRT_ENV) $ python main_hb.py gw10Two1 0 0
+  ```
+  1) Problem name: gw10Two1, gw20Three1, ky10One, it10, mcf2
+  
+  2) Version: 0
+  
+  3) Replication_no: 0,1,2,... 
 
-#### main_ql.py
+#### Vanilla Q-learning
+  ```bash
+  (VIRT_ENV) $ python main_ql.py it10 0
+  ```
+  1) Problem name: gw10Two1, gw20Three1, ky10One, it10, mcf2
+  
+  2) Replication_no: 0,1,2,...
