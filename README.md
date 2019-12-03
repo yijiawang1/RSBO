@@ -17,7 +17,7 @@
   ```bash
   (VIRT_ENV) $ python run_misoKG_REP.py miso_gw 0 0 gw10Two1
   ```
-  This is the main file for running BO with KG. It requests 5 inputs:
+  This is the main file for running BESD. It requests 5 inputs:
   
   1) The environment: miso_gw, miso_ky, miso_it, miso_mc
   
