@@ -1,4 +1,4 @@
-# RS-BO
+# Exploration via Sample-Efficient Subgoal Design
 
 ## What do we have
 ### Requirements
