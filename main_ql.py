@@ -11,6 +11,7 @@ import pickle
 from pickle import dump
 import numpy as np
 from collections import defaultdict
+import copy
 import scipy.io
 from problems.define_basic_functions import define_test_pts
 from problems.define_basic_functions_ql import obj_ql
@@ -91,7 +92,7 @@ if __name__ == '__main__':
 								env=env, flag_num=0, random_seed=random_seed, x=None, 
 								noise_base=noise_base, noise_rand=noise_rand, 
 								maze_num=maze_num, maze_name=maze_name, weight_vec_old=weight_vec_old)
-				weight_vec_old = weight_vec_new
+				weight_vec_old = copy.copy(weight_vec_new)
 			elif transfer_weight==2:
 				np.random.seed(sample*iter_num+iteration)
 				if env in ['gw']: weight_vec_init = np.random.uniform(low=0.0, high=0.001, size=features_num*actions_num)
